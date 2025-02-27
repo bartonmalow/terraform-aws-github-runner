@@ -11,4 +11,11 @@ terraform {
       version = "~> 3.0"
     }
   }
+
+  cloud {
+    organization = "bartonmalow"
+    workspaces {
+      name = "dna-builder-bots"
+    }
+  }
 }

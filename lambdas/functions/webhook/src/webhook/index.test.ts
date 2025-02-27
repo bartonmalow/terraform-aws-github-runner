@@ -288,8 +288,8 @@ function mockSSMResponse() {
   process.env.PARAMETER_GITHUB_APP_WEBHOOK_SECRET = '/path/to/webhook/secret';
   const matcherConfig = [
     {
-      id: '1',
-      arn: 'arn:aws:sqs:us-east-1:123456789012:queue1',
+      id: '1', // TODO: change to us-east-2
+      arn: 'arn:aws:sqs:us-east-2:123456789012:queue1',
       matcherConfig: {
         labelMatchers: [['label1', 'label2']],
         exactMatch: true,

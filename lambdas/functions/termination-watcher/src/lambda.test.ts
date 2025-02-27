@@ -19,8 +19,8 @@ const spotInstanceInterruptionEvent: SpotInterruptionWarning<SpotTerminationDeta
   source: 'aws.ec2',
   account: '123456789012',
   time: '2015-11-11T21:29:54Z',
-  region: 'us-east-1',
-  resources: ['arn:aws:ec2:us-east-1b:instance/i-abcd1111'],
+  region: 'us-east-2',
+  resources: ['arn:aws:ec2:us-east-2:instance/i-abcd1111'],
   detail: {
     'instance-id': 'i-abcd1111',
     'instance-action': 'terminate',
@@ -34,7 +34,7 @@ const bidEvictedEvent: BidEvictedEvent<BidEvictedDetail> = {
   source: 'aws.ec2',
   account: '123456789012',
   time: '2024-10-09T11:48:46Z',
-  region: 'eu-west-1',
+  region: 'us-east-2',
   resources: [],
   detail: {
     eventVersion: '1.10',
@@ -45,7 +45,7 @@ const bidEvictedEvent: BidEvictedEvent<BidEvictedDetail> = {
     eventTime: '2024-10-09T11:48:46Z',
     eventSource: 'ec2.amazonaws.com',
     eventName: 'BidEvictedEvent',
-    awsRegion: 'eu-west-1',
+    awsRegion: 'us-east-2',
     sourceIPAddress: 'ec2.amazonaws.com',
     userAgent: 'ec2.amazonaws.com',
     requestParameters: null,

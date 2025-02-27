@@ -29,7 +29,7 @@ mockAxios.get.mockResolvedValue({
   data: mockStream,
 });
 
-process.env.AWS_REGION = 'us-east-1';
+process.env.AWS_REGION = 'us-east-2';
 const mockS3client = mockClient(S3Client);
 
 const bucketName = 'my-bucket';

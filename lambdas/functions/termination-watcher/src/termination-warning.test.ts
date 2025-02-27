@@ -31,9 +31,9 @@ const event: SpotInterruptionWarning<SpotTerminationDetail> = {
   'detail-type': 'EC2 Spot Instance Interruption Warning',
   source: 'aws.ec2',
   account: '123456789012',
-  time: '2015-11-11T21:29:54Z',
-  region: 'us-east-1',
-  resources: ['arn:aws:ec2:us-east-1b:instance/i-abcd1111'],
+  time: '2015-11-11T21:29:54Z', // TODO: change to us-east-2
+  region: 'us-east-2',
+  resources: ['arn:aws:ec2:us-east-2:instance/i-abcd1111'],
   detail: {
     'instance-id': 'i-abcd1111',
     'instance-action': 'terminate',
